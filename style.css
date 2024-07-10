@@ -3,22 +3,45 @@
     padding: 0;
 }
 .container{
-    margin: 0auto;
+    margin: 0 auto;
     max-width: 1440px;
 }
 .card-area-start{
-    background-color: aqua;
-    padding: 50px 0 50px 0;
+    background-color: rgb(246, 58, 58);
+    padding: 50px 0 60px 0;
+}
+
+.box{
+    
+    border: 5px solid rgb(0, 255, 76);
+    padding: 40px;
+    border-radius: 15px;
 }
 .card{
-   display: grid;
-   grid-template-columns: repeat(4,1fr);
-   grid-gap: 20px;
-}
-.box img{
-    width: 330px;
-    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
 }
 
+@media screen  and (max-width:1024px) {
+    
+    .card{
+        grid-template-columns: repeat(4, 1fr);
+    }
+} 
 
-   
+@media screen  and (max-width:768px) {
+    
+    .card{
+        grid-template-columns: repeat(3, 1fr);
+    }
+} 
+@media screen  and (max-width:460px) {
+    
+    .card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+} 
+
+
+    
